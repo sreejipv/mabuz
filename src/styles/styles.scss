@@ -1,0 +1,77 @@
+
+@import 'generators.scss';
+// generators
+
+.c_white {
+    color: #ffffff;
+}
+.bg_brandBlue{
+    background-color: $brand-color;
+}
+.bg_white{
+    background-color: #ffffff;
+}
+.form_bg{
+    background-color: #C0DEE2;
+}
+
+// typography
+.f_bold {
+    font-weight: 800;
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+// layout
+
+// .bg_scene {
+//     background-image: url('../images/scene.png');
+//     background-position: 82% -126%;
+//     background-repeat: no-repeat;
+//     background-size: 44%;
+// }
+
+.br-6 {
+    border-radius: 6px;
+}
+// layout
+
+.flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-right {
+    justify-content: flex-end;
+}
+.flex-center {
+    justify-content: center;
+}
+
+.inline-input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #6789B0;
+    &:focus {
+        outline: none;
+        border-bottom-width: 2px;
+    }
+}
+.signup {
+    width: 330px;
+    label{
+        min-width: 200px;
+    }
+    button {
+        background-color: #032E56;
+        color: #ffffff;
+        padding: 10px 15px;
+        border: none;
+        width: 145px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 4px;
+    }
+}

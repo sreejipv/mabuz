@@ -1,0 +1,19 @@
+// color
+$brand-color: #6B8588;
+//spacing
+
+$spaceamounts: (0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 35, 40, 45, 50, 55, 60); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        .m-#{str-slice($side,0,1)}-#{$space} {
+            margin-#{$side}: #{$space}px !important;
+        }
+        .p-#{str-slice($side,0,1)}-#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+    
+}
+
